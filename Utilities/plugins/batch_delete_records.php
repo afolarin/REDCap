@@ -14,9 +14,12 @@
 // Call the REDCap Connect file in the main "redcap" directory
 require_once "../redcap_connect.php";
 
-// Limit this plugin only to project_id's 3, 12, and 45
+// Limit this plugin only to project_id's 3, 12, and 45, 
+//allowProjects also takes specific user ids (see the plugin FAQ page on your poject)
 //$projects = array(3, 12, 45);
 //REDCap::allowProjects($projects);
+//or
+//REDCap::allowProjects(1,2,44);
 	
 // OPTIONAL: Your custom PHP code goes here. You may use any constants/variables listed in redcap_info().
 $verify_existence = 1;	// Change to 0 if you don't want to query the record existed before deleting it.
