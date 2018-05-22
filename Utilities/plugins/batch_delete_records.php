@@ -9,6 +9,11 @@
  */
 
 // see REDCap Developer Tools — Plugin & Hook Documentation
+// usage copy e.g. to <redcap>/plugins web folder e.g. wget https://raw.githubusercontent.com/afolarin/REDCap/master/Utilities/plugins/batch_delete_records.php
+// Project> Add/edit Bookmarks, add new bookmark
+// enter url https://<redcap-base-url>/plugins/batch_delete_records.php (the /plugins will list all plugins)
+// check append project id to url bookmark option, the bookmark shold now take you to the plugin page,
+// which provides a text box to past a 1-per-line list of plugins to delete
 	
 // The recommended location for this script is in /redcap/plugins.
 // Call the REDCap Connect file in the main "redcap" directory
