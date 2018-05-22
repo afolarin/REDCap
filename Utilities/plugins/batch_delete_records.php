@@ -8,10 +8,16 @@
  * AUTHOR:      Mike Gleason <mgleason@unmc.edu>
  */
 
+// see REDCap Developer Tools — Plugin & Hook Documentation
+	
 // The recommended location for this script is in /redcap/plugins.
 // Call the REDCap Connect file in the main "redcap" directory
 require_once "../redcap_connect.php";
 
+// Limit this plugin only to project_id's 3, 12, and 45
+//$projects = array(3, 12, 45);
+//REDCap::allowProjects($projects);
+	
 // OPTIONAL: Your custom PHP code goes here. You may use any constants/variables listed in redcap_info().
 $verify_existence = 1;	// Change to 0 if you don't want to query the record existed before deleting it.
 $verify_deletion = 1;	// Change to 0 if you don't want to re-query each record after trying to delete it.
